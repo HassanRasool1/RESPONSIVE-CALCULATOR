@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(wallpapersden.com_77061-1920x1080.jpg);
+}
+
+.calculator {
+  position: relative;
+  display: grid;
+}
+
+.calculator .value {
+  grid-column: span 4;
+  height: 100px;
+  text-align: right;
+  border: 1px whit solid;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  background-color: rgba(114, 107, 107, 0.5); 
+  backdrop-filter: blur(10px);
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+}
+
+.calculator span {
+  display: grid;
+  width: 90px;
+  height: 90px;
+  background: #292929;
+  place-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(10px);
+}
+
+.calculator span:active {
+  /* background: rgb(255, 163, 26); */
+  background: #2e2e2e;
+  color: #fff;
+  
+  
+}
+
+.calculator span.clear {
+  grid-column: span 2;
+  width: 180px;
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(10px);
+}
+
+.calculator span.plus {
+  grid-row: span 2;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(10px);
+}
+
+.calculator span.equal {
+  background: rgb(255, 163, 26);
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(10px);
+}
